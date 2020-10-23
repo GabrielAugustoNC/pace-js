@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/pace.js"></script>
+
+    <link href="themes/purple/pace-theme-loading-bar.css" rel="stylesheet" />
+
+    <script>
+        function teste() {
+            setTimeout(() => {}, 10000)
+            $.ajax({
+                url: "http://192.168.1.139:9027/lastCallsAPI",
+                dataType: 'json',
+                success: function(response) {}
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    <input id="button" type="button" onclick="teste()" value="TESTE PACE" />
+</body>
+
+</html>
